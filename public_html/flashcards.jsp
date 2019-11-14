@@ -14,12 +14,11 @@
     <%-- This is a JSP comment --%>
 
     <h3>This is a simple first look at a JSP page.</h3>
-    <h3>This is a simple first look at a JSP page.</h3>
 
-
-
-    <p> ${questionAnswer.data}</p>
-    <p> ${questionAnswer.randomQuestion}</p>
+    <!--<p> ${questionAnswer.randomQuestion}</p>-->
+    <!--<p style="color:blue;"> ${questionAnswer.data}</p>-->
+    <p style="color:red; padding: 5px; border: 5px;"> question: ${questionAnswer.question}</p>
+    <p style="color:red; padding: 5px; border: 5px;"> answer: ${questionAnswer.answer}</p>
 
     <p><a href="/java112">Home</a></p>
   </body>
