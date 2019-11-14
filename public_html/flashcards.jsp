@@ -27,12 +27,7 @@
     <script>
         function myFunction() {
             document.getElementById("answer").innerHTML = "answer: ${questionAnswer.answer}";
-          /*var x = document.getElementById("answer");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-        }*/
+
         }
     </script>
 
