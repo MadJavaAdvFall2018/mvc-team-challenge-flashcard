@@ -17,21 +17,21 @@ public class BeanFlashCard {
 
         qA = new HashMap<String, String>();
 
-        qA.put("question1", "answer1");
-        qA.put("question2", "answer2");
-        qA.put("question3", "answer3");
-        qA.put("question4", "answer4");
-        qA.put("question5", "answer5");
-        qA.put("question6", "answer6");
-        qA.put("question7", "answer7");
-        qA.put("question8", "answer8");
-        qA.put("question9", "answer9");
-        qA.put("question10", "answer10");
-        qA.put("question11", "answer11");
-        qA.put("question12", "answer12");
-        qA.put("question13", "answer13");
-        qA.put("question14", "answer14");
-        qA.put("question15", "answer15");
+        qA.put("The PrintWriter class is part of which package?", "java.io.*");
+        qA.put("What does 'ANT' stand for?", "Another Neat Tool");
+        qA.put("Consider this code: ArrayList<Car> carInventory = new ArrayList<Car>(); What is the object reference?", "carInventory");
+        qA.put("In order to use Properties class, which package must be imported?", "java.util.*");
+        qA.put("Which is not one of the main collection interfaces? List, Hash, Set, or Map", "Hash");
+        qA.put("The Properties class is a type of:", "Map");
+        qA.put("The Properties class has key-value pairs that are Strings. T/F?", "True");
+        qA.put("If 100 users access a servlet from 100 different browsers, how many instances of the servlet are instantiated?", "1");
+        qA.put("In a servlet, the public void init() method is:", "called once when the servlet is loaded");
+        qA.put("What language is ANT written in?", "Java");
+        qA.put("What 2 main functions have we used ANT for so far in this class?", "build/compile, running unit tests");
+        qA.put("What does TDD stand for?", "Test driven development");
+        qA.put("What does TFD stand for", "Test first development");
+        qA.put("What tag is used to include files in jsp pages?", "<%@ include file=\"template-example-footer.jsp\"%>");
+        qA.put("What does Expression Language syntax look like?", "${some variable or attribute name here}");
     }
 
 
@@ -45,17 +45,6 @@ public class BeanFlashCard {
         String randomQuestion = qA.get(key);
         String[] questionAnswer = new String[2];
         int a = 1;
-/*
-        for (Map.Entry<String, String> entry : qA.entrySet()) {
-            if (entry.getKey() == randomQuestion) {
-                questionAnswer[0] = entry.getKey();
-                questionAnswer[1] = entry.getValue();
-                //question = entry.getKey();
-                //answer = entry.getValue();
-            }
-        }*/
-
-
         return questionAnswer;
     }
 

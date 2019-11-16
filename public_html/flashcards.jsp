@@ -18,15 +18,15 @@
 
     <!--<p> ${questionAnswer.randomQuestion}</p>-->
     <!--<p style="color:blue;"> ${questionAnswer.data}</p>-->
-    <p id="question"> question: ${questionAnswer.question}</p>
-    <button onclick="myFunction()">Click here to view answer</button>
+    <p id="question"> Question: ${questionAnswer.question}</p>
+    <button onclick="myFunction()">View Answer</button>
     <p id="answer"></p>
-
+    <button onClick="window.location.reload();">Next Question</button>
     <!--<p><a href="/java112">Home</a></p>-->
 
     <script>
         function myFunction() {
-            document.getElementById("answer").innerHTML = "answer: ${questionAnswer.answer}";
+            document.getElementById("answer").innerHTML = "Answer: ${questionAnswer.answer}";
 
         }
     </script>
