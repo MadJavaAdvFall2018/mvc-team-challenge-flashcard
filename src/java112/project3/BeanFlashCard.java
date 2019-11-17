@@ -30,7 +30,7 @@ public class BeanFlashCard {
         qA.put("What 2 main functions have we used ANT for so far in this class?", "build/compile, running unit tests");
         qA.put("What does TDD stand for?", "Test driven development");
         qA.put("What does TFD stand for", "Test first development");
-        qA.put("What tag is used to include files in jsp pages?", "<%@ include file=\"template-example-footer.jsp\"%>");
+        qA.put("What tag is used to include files in jsp pages?", "<%@ include file= " + "&quot;example_file.jsp&quot;" + "%>");
         qA.put("What does Expression Language syntax look like?", "${some variable or attribute name here}");
     }
 
