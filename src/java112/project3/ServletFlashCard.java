@@ -7,15 +7,19 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
+
 /**
+ * The type Servlet flash card.
  *
- *
- *@author    emullendore
+ * @author emullendore
+ * @author sfhlug
+ * @author jmsee
  */
 @WebServlet(
     name = "servletflashcard", 
     urlPatterns = { "/flashcard" }
 )
+
 public class ServletFlashCard extends HttpServlet {
 
     /**

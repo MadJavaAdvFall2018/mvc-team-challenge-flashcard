@@ -3,16 +3,22 @@ import java.io.*;
 import java.util.*;
 
 
-import java112.utilities.*;
-
-
-
-
+/**
+ * The type Bean flash card.
+ *
+ * @author emullendore
+ * @author sfhlug
+ * @author jmsee
+ */
 public class BeanFlashCard {
     private Map<String, String> qA;
     String question;
     String answer;
 
+    /**
+     * Instantiates a new Bean flash card.
+     * puts key/values to HashMap
+     */
     public BeanFlashCard() {
 
         qA = new HashMap<String, String>();
@@ -34,7 +40,11 @@ public class BeanFlashCard {
         qA.put("What does Expression Language syntax look like?", "${some variable or attribute name here}");
     }
 
-
+    /**
+     * Get random question string [ ].
+     *
+     * @return the string [ ]
+     */
     public String[] getRandomQuestion() {
         Object[] array = qA.keySet().toArray();
         Random random = new Random();
@@ -48,14 +58,30 @@ public class BeanFlashCard {
         return questionAnswer;
     }
 
+    /**
+     * Gets question.
+     *
+     * @return the question
+     */
     public String getQuestion() {
         return question;
 
     }
+
+    /**
+     * Gets answer.
+     *
+     * @return the answer
+     */
     public String getAnswer() {
         return answer;
     }
 
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
     public Map<String, String> getData() {
         return qA;
     }
